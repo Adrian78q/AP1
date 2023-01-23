@@ -60,12 +60,5 @@ while true; do
   echo "5) Insertar libro"
   echo "6) Salir"
   read opcion
-    case $opcion in
-        1) buscar_titulo;;
-        2) buscar_anyo;;
-        3) buscar_editorial;;
-        4) buscar_genero;;
-        5) insertar_libro;;
-        6) exit;;
-    esac
+    
 done
