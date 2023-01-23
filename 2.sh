@@ -5,9 +5,9 @@ while true; do
   if [[ $valor =~ ^[0-9]+$ ]]; then
     if (( valor > 0 )); then
       if (( valor % 2 == 0 )); then
-        echo "El valor es par"
+        echo "Es par"
       else
-        echo "El valor es impar"
+        echo "Es impar"
       fi
       break
     else
