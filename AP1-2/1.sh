@@ -1,7 +1,7 @@
 #!/bin/bash
-echo "Ingresa una cadena de caracteres:"
+echo "Introduce una cadena de caracteres:"
 read cadena1
-echo "Ingresa otra cadena de caracteres:"
+echo "Introduce otra cadena de caracteres:"
 read cadena2
 if [ "$cadena1" == "$cadena2" ]; then
     echo "Las cadenas son iguales."
