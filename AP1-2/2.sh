@@ -16,7 +16,7 @@ if [ $valor -le 0 ]; then
     exit 1
 fi
 
-if [ $(($valor % 2)) -eq 0 ]; then
+if [ $(($valor % 2)) -eq 1 ]; then
     echo "El valor es par."
 else
     echo "El valor es impar."
