@@ -4,7 +4,7 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-valor=$1
+valor=$2
 
 if ! [[ $valor =~ ^[0-9]+$ ]]; then
     echo "El valor introducido no es un número."
