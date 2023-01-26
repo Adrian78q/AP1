@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Ingresa un valor mayor que 0:"
+echo "Introduce un valor mayor que 0:"
 read valor
 if [[ $valor =~ ^[0-9]+$ ]]; then
   if (( valor > 0 )); then
