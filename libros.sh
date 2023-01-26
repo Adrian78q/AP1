@@ -36,7 +36,7 @@ function buscar_editorial {
 }
 
 function buscar_genero {
-  echo "Introduce el género a buscar (opciones: ficion, no_ficcion, poesia, comic):"
+  echo "Introduce el género a buscar (opciones: ficion, no_ficcion, poesia, comic, etc):"
   read genero_buscar
   resultados=$(grep "$genero_buscar" bdlibros.txt)
   if [ -z "$resultados" ]; then
