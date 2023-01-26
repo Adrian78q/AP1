@@ -1,11 +1,7 @@
 #!/bin/bash
-if [ $# -ne 3 ]; then
-  echo "Se requieren 3 argumentos: el primer valor, el operador (+, -, *, /) y el segundo valor."
-  exit 1
-fi
-valor1=$1
-operador=$2
-valor2=$3
+read -p "Introduce el primer valor: " valor1
+read -p "Introduce el operador (+, -, *, /): " operador
+read -p "Introduce el primer valor: " valor2
 if ! [[ "$valor1" =~ ^[0-9]+([.][0-9]+)?$ ]]; then
   echo "El primer valor debe ser un número válido."
   exit 1
