@@ -1,6 +1,7 @@
 #!/bin/bash
-echo "Introduce un valor mayor que 0:"
-read valor
+#echo "Introduce un valor mayor que 0:"
+#read valor
+read -p "Introduce un valor mayor que 0:" valor
 if [[ $valor =~ ^[0-9]+$ ]]; then
   if (( valor > 0 )); then
     for i in $(seq 0 $valor); do
