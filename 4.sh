@@ -1,7 +1,8 @@
 #!/bin/bash
 while true; do
-  echo "Ingresa el día numérico del mes (1-30):"
-  read dia
+  #echo "Introduce el día numérico del mes (1-30):"
+  #read dia
+  read -p "Introduce el día numérico del mes (1-30):" dia
   if [[ $dia =~ ^[0-9]+$ ]]; then
     if (( dia >= 1 && dia <= 30 )); then
       semana=( "lunes" "martes" "miércoles" "jueves" "viernes" "sábado" "domingo" )
